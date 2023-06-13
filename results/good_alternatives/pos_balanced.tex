@@ -1,0 +1,111 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{green01270}{RGB}{0,127,0}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={Number of questions},
+xmin=-0.55, xmax=11.55,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={Position},
+ymin=-2.8, ymax=80.8,
+ytick style={color=black}
+]
+\addplot [semithick, red, mark=x, mark size=3, mark options={solid}]
+table {%
+0 52.5
+1 31.5
+2 22
+3 15
+4 9
+5 7
+6 6
+7 4
+8 3
+9 3
+10 3
+11 2
+};
+\addplot [semithick, red]
+table {%
+0 36.75
+1 18.75
+2 10
+3 6.75
+4 4
+5 3
+6 3
+7 2
+8 1
+9 1
+10 1
+11 1
+};
+\addplot [semithick, red]
+table {%
+0 71
+1 47.25
+2 37
+3 27.25
+4 19.25
+5 13.25
+6 12
+7 9
+8 7
+9 6
+10 5
+11 4
+};
+\addplot [semithick, green01270, mark=triangle*, mark size=3, mark options={solid,rotate=180}]
+table {%
+0 50
+1 29.5
+2 19
+3 14
+4 10.5
+5 9.5
+6 7
+7 6
+8 4
+9 3
+10 2
+11 2
+};
+\addplot [semithick, green01270]
+table {%
+0 20
+1 10
+2 7.75
+3 6
+4 4.75
+5 3.75
+6 3
+7 2
+8 2
+9 1
+10 1
+11 1
+};
+\addplot [semithick, green01270]
+table {%
+0 77
+1 55
+2 38.25
+3 29
+4 20
+5 21.25
+6 15
+7 11.25
+8 9
+9 7
+10 6
+11 4
+};
+\end{axis}
+
+\end{tikzpicture}
